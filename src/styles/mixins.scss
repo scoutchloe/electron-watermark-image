@@ -1,0 +1,69 @@
+// Dart Sass Mixins
+// 现代化的 Sass 混入
+
+@use './variables' as vars;
+
+// 响应式断点 mixin
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: vars.$breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: vars.$breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: vars.$breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: vars.$breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: vars.$breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+// Flexbox 居中 mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 文本省略 mixin
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 阴影 mixin
+@mixin box-shadow($level: 'base') {
+  @if $level == 'light' {
+    box-shadow: vars.$shadow-light;
+  } @else if $level == 'base' {
+    box-shadow: vars.$shadow-base;
+  } @else if $level == 'dark' {
+    box-shadow: vars.$shadow-dark;
+  }
+}
+
+// 过渡动画 mixin
+@mixin transition($property: all, $duration: vars.$transition-base, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+// 渐变背景 mixin
+@mixin gradient-bg($gradient: vars.$primary-gradient) {
+  background: $gradient;
+}
+
+// 圆角 mixin
+@mixin border-radius($radius: vars.$border-radius-base) {
+  border-radius: $radius;
+} 

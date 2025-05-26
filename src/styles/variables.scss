@@ -1,0 +1,93 @@
+// Dart Sass 变量文件
+// 使用现代的 Sass 语法
+
+// 颜色变量
+$primary-color: #667eea !default;
+$secondary-color: #764ba2 !default;
+$accent-color: #f093fb !default;
+$success-color: #67c23a !default;
+$warning-color: #e6a23c !default;
+$danger-color: #f56c6c !default;
+$info-color: #909399 !default;
+
+// 渐变色
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !default;
+$secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !default;
+$success-gradient: linear-gradient(135deg, #67c23a 0%, #85ce61 100%) !default;
+
+// 文字颜色
+$text-primary: #303133 !default;
+$text-regular: #606266 !default;
+$text-secondary: #909399 !default;
+$text-placeholder: #c0c4cc !default;
+$text-white: #ffffff !default;
+
+// 背景颜色
+$bg-primary: #ffffff !default;
+$bg-secondary: #f5f7fa !default;
+$bg-dark: #2c3e50 !default;
+$bg-overlay: rgba(0, 0, 0, 0.5) !default;
+
+// 边框颜色
+$border-light: #ebeef5 !default;
+$border-base: #dcdfe6 !default;
+$border-dark: #c0c4cc !default;
+
+// 阴影
+$shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+$shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
+$shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.15) !default;
+
+// 圆角
+$border-radius-small: 4px !default;
+$border-radius-base: 8px !default;
+$border-radius-large: 12px !default;
+$border-radius-round: 50% !default;
+
+// 间距
+$spacing-xs: 4px !default;
+$spacing-sm: 8px !default;
+$spacing-md: 16px !default;
+$spacing-lg: 24px !default;
+$spacing-xl: 32px !default;
+$spacing-xxl: 48px !default;
+
+// 字体大小
+$font-size-xs: 12px !default;
+$font-size-sm: 14px !default;
+$font-size-base: 16px !default;
+$font-size-lg: 18px !default;
+$font-size-xl: 20px !default;
+$font-size-xxl: 24px !default;
+
+// 字体粗细
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+
+// 行高
+$line-height-base: 1.5 !default;
+$line-height-small: 1.2 !default;
+$line-height-large: 1.8 !default;
+
+// 层级
+$z-index-dropdown: 1000 !default;
+$z-index-sticky: 1020 !default;
+$z-index-fixed: 1030 !default;
+$z-index-modal-backdrop: 1040 !default;
+$z-index-modal: 1050 !default;
+$z-index-popover: 1060 !default;
+$z-index-tooltip: 1070 !default;
+
+// 断点
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 992px !default;
+$breakpoint-lg: 1200px !default;
+$breakpoint-xl: 1920px !default;
+
+// 动画时间
+$transition-fast: 0.15s !default;
+$transition-base: 0.3s !default;
+$transition-slow: 0.5s !default; 
